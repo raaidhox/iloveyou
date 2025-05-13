@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I Love You!</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #ffe6f2;
+      font-family: sans-serif;
+      color: #333;
+    }
+    h1 {
+      margin-bottom: 1rem;
+      color: #d6336c;
+    }
+    #message {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      text-align: center;
+      min-height: 2em;
+    }
+    button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background: #d6336c;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #b02a5a;
+    }
+  </style>
+</head>
+<body>
+  <h1>I Love You!</h1>
+  <button id="loveButton">Press me for a random compliment 💖</button>
+  <div id="message"></div>
+
+  <script>
+    const compliments = [
+  "Raaia, your smile lights up every room you enter.",
+  "lets do doggy",
+  "cant wait to be inside you",
+  "i want to eat you out and them somemore",
+  "Raaia, your kindness is a gift to everyone around you.",
+  "Raaia, you have an incredible sense of humor that brightens my day.",
+  "Raaia, your creativity knows no bounds.",
+  "Raaia, you bring out the best in people.",
+  "Raaia, your confidence is truly inspiring.",
+  "Raaia, you have a heart of gold.",
+  "Raaia, your laugh is absolutely contagious.",
+  "Raaia, you have an amazing ability to make anyone feel welcome.",
+  "Raaia, your intelligence shines through in everything you do.",
+  "Raaia, you are a true natural leader.",
+  "Raaia, your passion for life is infectious.",
+  "Raaia, you are endlessly thoughtful and caring.",
+  "Raaia, your strength and resilience amaze me.",
+  "Raaia, you have a wonderful way with words.",
+  "Raaia, your perspective on the world is refreshing.",
+  "Raaia, you handle challenges with grace and poise.",
+  "Raaia, your generosity knows no limits.",
+  "Raaia, you have an eye for beauty in everything.",
+  "Raaia, your zest for learning is admirable.",
+  "Raaia, you make ordinary moments extraordinary.",
+  "Raaia, your optimism is a beacon of hope.",
+  "Raaia, you light up my world with your presence.",
+  "Raaia, you have a gift for making people laugh.",
+  "Raaia, your integrity is beyond reproach.",
+  "Raaia, you are an inspiration to everyone around you.",
+  "Raaia, your sense of adventure is so exciting.",
+  "Raaia, you have a magnetic personality.",
+  "Raaia, your compassion changes lives.",
+  "Raaia, you are beautifully unique.",
+  "Raaia, your eyes sparkle with kindness.",
+  "Raaia, you have a remarkable talent for empathy.",
+  "Raaia, your ambition drives you to greatness.",
+  "Raaia, you have a calming presence.",
+  "Raaia, your authenticity is so refreshing.",
+  "Raaia, you have an unwavering spirit.",
+  "Raaia, your humor brightens the darkest days.",
+  "Raaia, you are treasured by all who know you.",
+  "Raaia, your fashion sense is impeccable.",
+  "Raaia, you make the world a better place.",
+  "Raaia, your loyalty is unmatched.",
+  "Raaia, you have a beautiful heart.",
+  "Raaia, your courage is inspiring.",
+  "Raaia, you bring warmth wherever you go.",
+  "Raaia, your curiosity leads to great discoveries.",
+  "Raaia, you have a wonderful sense of timing.",
+  "Raaia, your thoughtfulness brightens lives.",
+  "Raaia, you have an amazing memory.",
+  "Raaia, your voice is music to the ears.",
+  "Raaia, you light up the world with your ideas.",
+  "Raaia, your positivity is contagious.",
+  "Raaia, you have a natural elegance.",
+  "Raaia, your dedication is awe-inspiring.",
+  "Raaia, you have a heartwarming smile.",
+  "Raaia, your insights are always enlightening.",
+  "Raaia, you are a true original.",
+  "Raaia, your charm is irresistible.",
+  "Raaia, you have a gift for making friends.",
+  "Raaia, your dreams are worth chasing.",
+  "Raaia, you make life feel like an adventure.",
+  "Raaia, your presence is a present.",
+  "Raaia, you are brimming with potential.",
+  "Raaia, your energy lifts everyone up.",
+  "Raaia, you have a beautiful soul.",
+  "Raaia, your vision for the future is bright.",
+  "Raaia, you have a wonderful sense of humor.",
+  "Raaia, your patience is admirable.",
+  "Raaia, you make kindness look effortless.",
+  "Raaia, your optimism gives hope.",
+  "Raaia, you are as graceful as you are strong.",
+  "Raaia, your laughter is my favorite sound.",
+  "Raaia, you have a remarkable capacity for love.",
+  "Raaia, your spirit is unbreakable.",
+  "Raaia, you inspire me to be better every day.",
+  "Raaia, your intelligence is matched only by your heart.",
+  "Raaia, you create beauty wherever you go.",
+  "Raaia, your enthusiasm is truly motivational.",
+  "Raaia, you have a knack for making memories special.",
+  "Raaia, your strength gives others strength.",
+  "Raaia, you are full of delightful surprises.",
+  "Raaia, your grace lights up every conversation.",
+  "Raaia, you embody kindness and courage.",
+  "Raaia, your smile is my daily sunshine.",
+  "Raaia, you are an absolute joy to know.",
+  "Raaia, your authenticity is a breath of fresh air.",
+  "Raaia, you are a star in any sky.",
+  "Raaia, your heart speaks volumes without saying a word.",
+  "Raaia, you are loved beyond measure."
+];
+
+
+    document
+      .getElementById("loveButton")
+      .addEventListener("click", () => {
+        // pick a random index from 0 to compliments.length-1
+        const idx = Math.floor(Math.random() * compliments.length);
+        document.getElementById("message").textContent = compliments[idx];
+      });
+  </script>
+</body>
+</html>
